@@ -1,0 +1,849 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;400;800&display=swap');
+
+:root{
+    --grey:#F2F2F2;
+    --blue:#0065FC;
+    --blue2:#DEEBFF ;
+}
+
+/*-----------------------------
+---------- GENERAL ------------ 
+-----------------------------*/
+
+*{
+    margin: 0; 
+    padding: 0;
+    font-family: 'Raleway', sans-serif;
+    box-sizing: content-box;
+}
+body, html{
+    height:100%;
+    max-width: 100%;
+}
+
+main{
+    padding: 0 25px 0 25px;
+}
+
+header{
+    padding: 0 25px 0 25px;
+}
+
+a{
+    color: black;
+    text-decoration: none;
+}
+
+a:hover{    
+    color: var(--blue);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/*-----------------------------
+------- UTILITAIRES ----------- 
+-----------------------------*/
+
+.fc{
+    display: flex;
+}
+
+.fw{
+    flex-wrap: wrap;
+}
+
+.fdc{
+    flex-direction: column;
+}
+
+.aic{
+    align-items:center;
+}
+
+.ais{
+    align-items: flex-start;
+}
+
+.jcs{
+    justify-content: start;
+}
+
+.gap10{
+    gap: 10px;
+}
+
+.gap20{
+    gap:20px;
+}
+.mt5{
+    margin-top: 5px;
+}
+.mt10{
+    margin-top: 10px;
+}
+
+.mt20{
+    margin-top: 20px;
+}
+
+.mb10{
+    margin-bottom: 10px;
+}
+
+.mb20{
+    margin-bottom: 20px;
+}
+
+.mbauto{
+    margin-bottom: auto;
+}
+.mtauto{
+    margin-top: auto;
+}
+.mlauto{
+    margin-left: auto;
+}
+
+.ml10{
+    margin-left: 10px;
+}
+
+.ml20{
+    margin-left: 20px;
+}
+
+.jcsb{
+    justify-content: space-between;
+}
+
+.jcsa{
+    justify-content: space-around;
+}
+
+.jcc{
+    justify-content: center;
+}
+
+.bold{
+    font-weight: bolder;
+}
+.bgcb2{
+    background-color: var(--blue2);
+}
+
+.size{
+    font-size: 20px;
+}
+
+.cblue{
+color: var(--blue);
+}
+
+.cgrey{
+    color: var(--grey);
+}
+
+.mw100{
+ width: 100%;
+}
+
+
+.bggreen{
+    background-color: greenyellow;
+}
+
+.bgblue{
+    background-color: blue;
+}
+
+.bgred{
+    background-color: red;
+}
+
+.fwrap{
+    flex-wrap: wrap;
+}
+
+
+
+/*-----------------------------
+-------- SITE BOOKIE ----------
+-----------------------------*/
+
+/*--------- HEADER ---------*/
+.top-header{
+    background-color: rgb(255, 255, 255);
+    height: 100px;
+}
+
+.logo{
+    width: 70%;
+}
+
+.top-header nav{
+    background-color: rgb(255, 255, 255);
+    height: 100%;
+}
+
+.top-header nav ul{
+    list-style: none;
+    
+}
+
+.top-header nav li{
+    width: 100px;
+    padding: 40pX 25px;
+    border-top: solid 2px transparent;
+    text-align: center;
+}
+
+.top-header nav li:hover{
+    border-top: 2PX solid var(--blue) ;
+    color: var(--blue);
+}
+
+.top-header nav li a{
+    text-decoration: none;
+    color: black ;
+}
+
+.top-header nav li a:hover{
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--blue);
+}
+ 
+h2{
+    font-weight: bolder;
+}
+
+
+/*-- Formulaire de recherche --*/
+form{
+    height: 50px;
+    width: 100%;
+}
+.icone{
+    background-color: var(--grey);
+    width: 15PX;
+    padding: 15px;
+    border-radius: 10px 0px 0 10px;
+}
+
+.input{
+    padding: 10px;
+    border: none;
+    border-top: solid 1px var(--grey);
+    border-bottom:solid 1px var(--grey);
+    color: black;
+    font-weight: bolder;
+}
+
+.button{
+    min-width: 120px;
+    color: white;
+    font-weight: bold;
+    background-color:#0065FC ;
+    border: transparent;
+    border-radius: 0 15px 15px 0;  
+}
+
+#button2{
+    display: none;   
+}
+
+.button:hover{
+    background-color: rgb(3, 146, 255);
+    cursor: pointer;
+}
+
+/*-- Filtres --*/
+.fBox{
+    height: 40px;
+    max-width: auto;
+    margin: 30px;
+    border: solid 4px var(--grey);
+    border-left: none;
+    border-radius: 30px ;
+    background-color: white;
+}
+.fIcone{
+    height: 40px;
+    width: 40px;
+    background-color: var(--blue2);
+    border: solid 4px var(--blue2);
+    border-radius: 50px 50px;
+}
+
+.fBox p{
+    margin: 20px;
+    font-weight: bolder;
+}
+
+
+
+.info{ 
+    padding:5px 10px;
+    border: solid 3px var(--grey);
+    border-radius: 50px;
+}
+
+.info i{
+    font-size: 15px;
+    font-weight: bolder ;
+}
+
+/*-- Photos hébergements--*/
+
+.bloc1{
+    width: 63%;
+    margin: 5px;
+    padding: 10px;
+    background-color: var(--grey);
+    border-radius: 0 30px 30px 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.box-h2{
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.boxPics{
+    max-height: 36%;
+    width: 26%;
+    background: white;
+    border-radius: 20px;
+    padding: 10px;
+    margin-bottom: 25px;
+    box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.1);
+    font-size: 14px;
+}
+
+.boxPics img{
+    height: 150px;
+    width: 100%;
+    object-fit: cover;
+    object-position: center center;
+    border-radius: 20px 20px 0 0;
+}
+
+.bloc2{
+    width: 28%;
+    margin: 5px;
+    padding: 20px;
+    background-color: var(--grey);
+    border-radius: 30PX;
+}
+
+.bloc2-title{
+    width: 83%;
+    margin-bottom: 20px;
+}
+
+.bloc2-i{
+    font-size: 25px;
+}
+
+.boxPics2{
+    min-height: 25%;
+    width: 80%;
+    margin: 10px;
+    background: white;
+    border-radius: 20px;
+    padding: 10px;
+    box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.1);
+}
+
+.boxPics2 img{
+    height: 100%;
+    width: 40%;
+    object-fit: cover;
+    object-position: center center;
+    border-radius: 20px 0px 0 20PX;
+}
+
+
+.title-h3{
+    height: 100%;
+    width: 55%;
+}
+
+.title-h3 h3{
+font-size: 1em;
+}
+
+/*-- Bloc "Activités" --*/
+
+.blocP2{
+    width: 24%;
+}
+
+.bloc-img{
+    height: auto;
+    width: 100%;
+    background: white;
+    border-radius: 20px;
+    box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.1);
+}
+
+.bloc-img img{
+    height: 93%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center center;
+    border-radius: 20px 20px 0 0PX;
+}
+
+.bloc-img h3{
+    margin: 10px;
+
+}
+
+.bloc-img2{
+    height: 55%;
+    width: 100%;
+    background: white;
+    border-radius: 20px;
+    box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.1);
+}
+
+.bloc-img2 img{
+    height: 88%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 20px 20px 0 0PX;
+}
+
+.bloc-img2 h3{
+    margin: 10px;
+}
+
+.bloc-img3{
+    height: 40%;
+    width: 100%;
+    background: white;
+    border-radius: 20px;
+    box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.1);
+}
+
+.bloc-img3 img{
+    height: 82%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 20px 20px 0 0PX;
+}
+
+.bloc-img3 h3{
+    margin: 10px;
+}
+
+.bloc4-h3{
+    margin: 0 !important;
+    margin-left: 15px !important;
+}
+
+.bloc-img5{
+    height: 40%;
+    width: 100%;
+    background: white;
+    border-radius: 20px;
+    box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.1);
+}
+
+.bloc-img5 img{
+    height: 85%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 20px 20px 0 0PX;
+}
+
+.bloc-img5 h3{
+    margin: 10px;
+}
+
+.bloc-img6{
+    height: 55%;
+    width: 100%;
+    background: white;
+    border-radius: 20px;
+    box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.1);
+}
+
+.bloc-img6 img{
+    height: 87.5%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 20px 20px 0 0PX;
+}
+
+.bloc-img6 h3{
+    margin: 10px;
+}
+        
+/*-- FOOTER" --*/    
+
+footer{
+        background: var(--grey);
+        position:relative;    
+        bottom:0;
+        width: 100%;
+        padding-top:30px;
+        margin-top: 60px;
+        min-height: 150px;
+        }
+
+.fgap{
+    gap:22%;
+}
+
+footer nav ul{
+        list-style: none;
+        }
+
+footer nav ul Li,h3{
+        margin-bottom: 10px;
+        }
+
+/*-----------------------------
+----- Site version Tablette -----
+-----------------------------*/
+
+/* On screens that are 992px or less */
+@media screen and (max-width: 992px) {
+    body {
+      background-color: white;
+    }
+
+/*-- Filtres --*/
+.filtresM{
+    display: block;
+    width: 100%;
+}
+
+.fBox{
+    margin: 20px 10px 10px 10px;
+}
+
+/*-- Photos hébergements--*/
+
+.blocP{
+    flex-direction: column;
+    width: 100%;
+}
+
+.bloc1{
+    width: 95%;
+    margin-bottom: 20PX;
+}
+
+.box-text{
+    height: 35%;
+}
+
+.bloc2{
+    height: 900px;
+    width: 100%;
+    padding: 10px;
+    align-items: start;
+}
+
+.bloc2-title{
+    margin-left: 20px;
+}
+
+.paraR1,.paraR2{
+    margin-bottom: 20px;
+}a
+.boxPics2{
+    height: 30% ;
+    width: 90%;
+}
+
+.boxPics2 i{
+    font-size: 1.3em;
+}
+
+/*-- Bloc "Activités" --*/
+
+.blocP2{
+    width: 85%;
+    height: auto;
+    font-size: 18px;
+    margin: 0 auto;
+    margin-bottom: 25px;
+}
+
+.bloc-img IMG{
+    height: 80%;
+}
+
+.bloc-img{
+    height: 225px;
+}
+
+
+.blocmob1{
+    height: 230px;
+}
+
+.bloc-img2, .bloc-img5{
+    margin-bottom: 25px;
+}
+
+.bloc-img2 img{
+    height: 80%;
+}
+
+.blocmob1 img{
+    height: 85%;
+}
+
+.blocmob3{
+    height: 290px;
+}
+
+.blocmob3 img{
+    height: 80%;
+}
+
+/*-- FOOTER" --*/  
+.fgap{
+    gap:15%;
+}
+  }
+
+ /*-----------------------------
+----- Site version MOBILE -----
+-----------------------------*/
+@media screen and (max-width: 768px) {
+    body {
+         background-color: rgb(255, 255, 255);
+         font-size: 100%;  
+         padding: 0 !important;     
+    }
+
+/*--------- HEADER ---------*/
+    .top-header{
+        height: auto;
+        flex-wrap: wrap;
+    }
+
+    .box-logo{
+        align-items: center;
+        margin: 0 auto;
+    }
+
+    .logo{
+        width: 40%;
+        margin: 0 auto;
+        margin-left: 140px;
+    }
+
+    .top-header nav{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin: 0 auto;
+    }
+
+    .top-header nav li{ 
+        padding: 20px 20px 20px 20px;
+        border-top: none;
+        border-bottom: solid 4px transparent;
+        text-align: center;
+        width: 150px;
+        font-size: 20px;
+    }
+
+    .top-header nav li:hover{
+        border-top: none ;
+        border-bottom: 4PX solid var(--blue) ;
+        color: #0065FC;
+    }
+
+    .header-H2{
+        display: block;
+        width: 99%;
+    
+    }
+ 
+/*-- Formulaire de recherche --*/
+    .input{
+        width: 65%;
+        padding: 10px;
+        padding-left: 20px;
+        border: none;
+        border-top: solid 1px var(--grey);
+        border-bottom:solid 1px var(--grey);
+        color: black;
+        font-weight: bolder;
+        font-size: 1.3rem;
+    }
+
+    .input::placeholder{
+        color: black;
+    }
+
+    .button{
+        display: none;
+    }
+
+    #button2{
+        display: block;
+        min-width: 60px;
+        color: white;
+        font-weight: bold;
+        background-color:#0065FC ;
+        border: transparent;
+        border-radius: 15px 15px 15px 15px;  
+    }
+
+/*-- Filtres --*/
+    .filtresM{
+        display: block;
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .fBox{
+        margin-left: 0;
+        margin-bottom: 0;  
+    }
+
+/*-- Photos hébergements--*/
+    .blocP{
+        flex-direction: column;
+        height: auto;
+        width: 100%;
+    }
+
+    .bloc1{
+        width: 95%;
+        order: 2;
+        border-radius: 0px;
+        font-size: 18px;
+        margin-bottom: 10px;
+        padding: 20px;
+        flex-wrap: wrap;
+        background-color: transparent;
+    }
+
+    .bloc1 .box-h2{
+        padding-left: 10px;
+        margin-left: 0;
+    }
+
+    .bloc1 .box-h2 h3{
+        margin-left: 0;
+    }
+
+    .bloc2{
+        width: 100%;
+        order: 1;
+        border-radius: 0pX;
+        font-size: 18px;
+    }
+
+    .boxPics2 i{
+        font-size: 1rem;
+    }
+
+    .blocPA .box-h2{
+        margin: 0 auto;
+        margin-bottom: 20px;
+        margin-left: 40px;
+    }
+
+    .boxPics{
+        width: 100%;
+        max-width: 450px;
+        margin-bottom: 20px;
+    }
+
+    /*-- Bloc "Activités" --*/
+    .blocmob{
+        width: 85%;
+        height: auto;   
+        font-size: 18px;  
+        margin: 0 auto;  
+        margin-bottom: 25px;                        
+    }
+
+    .bloc-img{
+        height: 225px;
+    }
+
+    .blocP2R{
+        width: 85%;
+        height: auto;   
+        font-size: 18px; 
+        margin: 0 auto;                         
+    }
+
+    .blocP2R2{
+        width: 85%;
+        height: 450px;   
+        font-size: 18px; 
+        margin: 0 auto; 
+        margin-top: 20px;                          
+    }
+    
+    .blocmob1{
+        width: 100%;
+        min-height: 210px;   
+        font-size: 18px;
+        margin: 0 auto;
+        margin-bottom:25px;  
+    }
+
+    .blocmob2{
+        width: 85%;
+        max-height: 210px;   
+        font-size: 18px; 
+        margin: 0 auto;  
+        margin-bottom:25px;    
+    }
+
+    .blocmob3{
+        width: 100%;
+        max-height: 210px;   
+        font-size: 18px;                          
+    }
+
+    .bloc-img img{
+        height:80%;
+    }
+
+/*-- FOOTER" --*/    
+footer{
+    height:auto;
+    margin-top: 10px;
+    }
+
+.fgap{
+gap:22%;
+}
+
+footer nav{
+    flex-direction: row;
+}
+
+footer nav div{
+    width: 100%;
+}
+
+footer nav ul{
+    margin-bottom: 30px;
+    }
+
+footer nav ul h3{
+    margin-bottom: 15px;
+}
+}
